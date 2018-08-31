@@ -31,10 +31,7 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient( to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)),
-    url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -118,7 +115,7 @@ body {
         opacity: 0;
         transform: translateY(3rem);
     }
-/*    80% {
+    /*    80% {
         transform: translateX(-10px);
     }*/
     100% {
@@ -135,23 +132,23 @@ body {
     display: inline-block;
     border-radius: 10rem;
     transition: all .2s;
-    position: relative;
+    position: relative; 
     font-size: 1.6rem;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-}
-
-.btn--white {
-    background-color: #fff;
-    color: #777;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn::after {
@@ -165,33 +162,18 @@ body {
     left: 0;
     z-index: -1;
     transition: all .4s;
+}
 
+.btn--white {
+    background-color: #fff;
+    color: #777;
 }
 
 .btn--white::after {
     background-color: #fff;
 }
 
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
 .btn--animated {
     animation: btnUp .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
