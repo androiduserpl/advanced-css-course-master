@@ -204,6 +204,13 @@
         </section>
 
         <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Twoja przeglądarka nie jest wpierana!
+                </video>
+            </div>
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Dzięki nam ludzie mają miłe wspomnienia
@@ -241,8 +248,42 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis dolor, cum dolore voluptates eveniet magni quas voluptas veritatis molestiae ullam placeat, perspiciatis quis molestias modi officiis ipsam ut labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quas, facere! </p>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text ">Poczytaj wszystkie historie &rarr;</a>
+            </div>
+            <div class="u-center-text u-margin-top-huge">
+                <a href="#" class="btn-text ">Poczytaj wszystkie historie &rarr;</a>
+            </div>
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Rezerwuj już teraz
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" id="name" placeholder="Imie i nazwisko" required>
+                                <label for="name" class="form__label">Imie i nazwisko</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" id="email" placeholder="Email" required>
+                                <label for="email" class="form__label">Adres mailowy</label>
+                            </div>
+                            <div class="form__grup">
+                                <div class="form__radio-grup">
+                                    <input type="radio" id="small" class="form__input-radio" name="size">
+                                    <label for="" id="small" class="form__input-label">Małe grupy</label>
+                                </div>
+                                <div class="form__radio-grup">
+                                    <input type="radio" id="large" class="form__input-radio" name="size">
+                                    <label for="" id="large" class="form__input-label">Duże grupy</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
